@@ -1,0 +1,242 @@
+
+
+
+
+.backgound_image{
+background-image: url('../images/back2\ \(2\).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* .container {
+    background-color: white;
+
+   
+} */
+
+.nav .nav-item a{
+    color: green;
+    font-size: 14px;
+    
+}
+
+.nav-highlight {
+   
+    padding: 0px 06px;
+    margin: 2 rem 2 rem;
+    border-radius: 5px;
+}
+
+
+.test{
+       background-color: white;
+     
+}
+
+
+.btn-social{
+    
+    border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.btn-social i {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 1.8rem;
+}
+
+
+
+
+
+
+.service-card {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+}
+
+.service-card .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(11, 60, 101, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.service-card:hover .overlay {
+  background-color: rgba(11, 60, 101, 0.8);
+}
+
+.bottom{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+
+.digiterra-intro h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.digiterra-intro .lead {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #e0f7fa;
+}
+
+.digiterra-intro {
+    padding-top: 0;
+     margin-top: 0;
+  min-height: 80vh;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  /* background: linear-gradient(135deg, #00334d, #005f73, #007f91, #00334d); */
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  text-align: center;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.fade-in.delay-1 { animation-delay: 0.5s; }
+.fade-in.delay-2 { animation-delay: 1s; }
+.fade-in.delay-3 { animation-delay: 1.5s; }
+.fade-in.delay-4 { animation-delay: 2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mission {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.mission-strong {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+.digiterra-intro .mission {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.digiterra-intro .mission-strong {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 15px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.digiterra-intro a.btn {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border-radius: 8px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-info{
+    background-color: blue;
+    color : white;
+
+    padding: 5px 0px;
+}
+
+.info-continu-titre{
+
+    background-color: black;
+    color: white;
+    padding:5px 15px;
+    font-size:22px;
+}
+
+.info-continu{
+    background-color: #eeee;
+}
+
+.info-heure{
+    background-color: #00A7E3;
+    color:write;
+    padding: 5px;
+}
