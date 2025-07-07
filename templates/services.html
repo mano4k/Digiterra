@@ -1,0 +1,226 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Nos services
+{% endblock%}
+
+{% block content %}
+
+<section class="offre-section appear">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 image-part">
+        <img src="./static/images/offre-service.jpg" alt="Offre de service" class="img-fluid">
+      </div>
+      <div class="col-md-6 text-part">
+        <h2 class="section-title">OFFRE DE SERVICE – DIGITERRA</h2>
+        <p class="section-text">
+          DIGITERRA est une entreprise spécialisée dans les services informatiques, la maintenance, les réseaux et télécommunications, la sécurité informatique ainsi que la vente de matériel IT. Nous accompagnons les entreprises et les particuliers dans la mise en place de solutions performantes et sécurisées adaptées à leurs besoins.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="prestation" class="prestation-section appear">
+  <div class="container">
+    <h2 class="section-title">Prestation Informatique</h2>
+
+    <div class="prestation-grid">
+      <div class="prestation-item">
+        <div class="icon"><i class="fas fa-desktop"></i></div>
+        <h5>Déploiement et administration</h5>
+        <p>Windows, Linux, macOS</p>
+      </div>
+
+      <div class="prestation-item">
+        <div class="icon"><i class="fas fa-server"></i></div>
+        <h5>Virtualisation et gestion des infrastructures</h5>
+        <p>VMware, Hyper-V, Proxmox</p>
+      </div>
+
+      <div class="prestation-item">
+        <div class="icon"><i class="fas fa-database"></i></div>
+        <h5>Sauvegarde et restauration</h5>
+        <p>Protection complète des données</p>
+      </div>
+
+      <div class="prestation-item">
+        <div class="icon"><i class="fas fa-cogs"></i></div>
+        <h5>Automatisation des processus</h5>
+        <p>Optimisation des flux de travail</p>
+      </div>
+
+      <div class="prestation-item">
+        <div class="icon"><i class="fas fa-chart-line"></i></div>
+        <h5>Audit et optimisation des performances</h5>
+        <p>Amélioration continue</p>
+      </div>
+    </div>
+
+    <p class="prestation-conclusion">
+      <strong>Nous proposons des solutions informatiques sur mesure pour optimiser la productivité et l'efficacité de votre entreprise.</strong>
+    </p>
+  </div>
+</section>
+
+
+
+
+<section  id="maintenance"class="maintenance-section appear">
+  <div class="container">
+    <h2>Maintenance Informatique</h2>
+
+    <div class="maintenance-list">
+      <div class="maintenance-item">
+        <div class="maintenance-icon"><i class="fas fa-cogs"></i></div>
+        <div class="maintenance-content">
+          <h5>Maintenance préventive et corrective</h5>
+          <p>Des ordinateurs et serveurs</p>
+        </div>
+      </div>
+
+      <div class="maintenance-item">
+        <div class="maintenance-icon"><i class="fas fa-print"></i></div>
+        <div class="maintenance-content">
+          <h5>Maintenance des imprimantes et scanners</h5>
+          <p>Entretien régulier de vos périphériques</p>
+        </div>
+      </div>
+
+      <div class="maintenance-item">
+        <div class="maintenance-icon"><i class="fas fa-wrench"></i></div>
+        <div class="maintenance-content">
+          <h5>Dépannage matériel et logiciel</h5>
+          <p>Résolution rapide des problèmes techniques</p>
+        </div>
+      </div>
+
+      <div class="maintenance-item">
+        <div class="maintenance-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="maintenance-content">
+          <h5>Nettoyage et optimisation des performances</h5>
+          <p>Des postes de travail</p>
+        </div>
+      </div>
+
+      <div class="maintenance-item">
+        <div class="maintenance-icon"><i class="fas fa-download"></i></div>
+        <div class="maintenance-content">
+          <h5>Mise à jour et installation de logiciels professionnels</h5>
+          <p>Maintien à jour de vos outils informatiques</p>
+        </div>
+      </div>
+
+      <div class="maintenance-item">
+        <div class="maintenance-icon"><i class="fas fa-headset"></i></div>
+        <div class="maintenance-content">
+          <h5>Assistance technique sur site et à distance</h5>
+          <p>Support disponible selon vos besoins</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="maintenance-conclusion">
+      Nos services de maintenance garantissent le bon fonctionnement de vos équipements informatiques.
+    </p>
+  </div>
+</section>
+
+
+
+
+<section  id="reseaux" class="reseaux-section">
+  <div class="container">
+    <h2 class="section-title">Réseaux Informatiques & Télécoms</h2>
+
+    <div class="circle-grid">
+      <div class="circle-item">
+        <div class="icon"><i class="fas fa-wifi"></i></div>
+        <h5>Installation et configuration de réseaux</h5>
+        <p>LAN, WAN et Wi-Fi</p>
+      </div>
+      
+      <div class="circle-item">
+        <div class="icon"><i class="fas fa-signal"></i></div>
+        <h5>Installation de liaison faisceaux hertziens</h5>
+        <p>BLR</p>
+      </div>
+      
+      <div class="circle-item">
+        <div class="icon"><i class="fas fa-network-wired"></i></div>
+        <h5>Câblage structuré et baies de brassage</h5>
+        <p>Infrastructure réseau professionnelle</p>
+      </div>
+      
+      <div class="circle-item">
+        <div class="icon"><i class="fas fa-video"></i></div>
+        <h5>Installation de matériel de visioconférence</h5>
+        <p>Solutions de communication à distance</p>
+      </div>
+    </div>
+
+    <p class="conclusion-text">
+      Nous assurons l'installation et la gestion de vos infrastructures réseau et télécoms, incluant la configuration de routeurs, switches et pare-feu (Cisco, Ubiquiti, MikroTik, GrandStream, etc.), la mise en place de solutions VoIP et téléphonie IP, ainsi que la surveillance et maintenance des réseaux.
+    </p>
+  </div>
+</section>
+
+serite
+
+<section id="securite" class="securite-section">
+  <div class="container">
+    <h2 class="section-title">Sécurité Informatique</h2>
+
+    <div class="pyramid">
+
+      <div class="pyramid-level level-1">
+        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+        <div>
+          <h5>Solutions de cybersécurité</h5>
+          <p>Firewall, antivirus, EDR</p>
+        </div>
+      </div>
+
+      <div class="pyramid-level level-2">
+        <div class="icon"><i class="fas fa-lock"></i></div>
+        <div>
+          <h5>Protection des réseaux et données</h5>
+          <p>Sécurisation des informations sensibles</p>
+        </div>
+      </div>
+
+      <div class="pyramid-level level-3">
+        <div class="icon"><i class="fas fa-key"></i></div>
+        <div>
+          <h5>Sécurisation des accès</h5>
+          <p>Authentification forte (MFA)</p>
+        </div>
+      </div>
+
+      <div class="pyramid-level level-4">
+        <div class="icon"><i class="fas fa-search"></i></div>
+        <div>
+          <h5>Tests d'intrusion et audits</h5>
+          <p>Évaluation des vulnérabilités</p>
+        </div>
+      </div>
+
+      <div class="pyramid-level level-5">
+        <div class="icon"><i class="fas fa-user"></i></div>
+        <div>
+          <h5>Formation et sensibilisation</h5>
+          <p>À la cybersécurité</p>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="conclusion-text">
+      Nous protégeons vos infrastructures contre les cybermenaces avec des solutions complètes et adaptées.
+    </p>
+  </div>
+</section>
+
+{% endblock %}

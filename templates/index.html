@@ -5,51 +5,6 @@ Accueil
 {% endblock%}
 
 
-{% block header %}
-    <div class="   bottom">
-        <div class= "container navbar navbar-expand-lg bg-light">
-            <div class ="row">
-                <a class="navbar-brand col-4" href="{{ url_for('index') }}">
-                    <img class="w-25" src="./static/images/logo diterra.png" alt ="image defilant">
-                </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-              
-                <div class="collapse navbar-collapse col-6" id="navbarMenu">
-                    <ul class ="nav   d-flex justify-content-center">
-                    
-
-                        <li class= "nav-item my-auto">
-                            <a class="nav-link" href="{{ url_for('index') }}">
-                                <i class="fa-solid fa-house-chimney"></i>
-                            </a>
-                        </li>
-
-                        <li class= "nav-item dropdown">
-                                <a class="nav-link dropdown-toggle nav-highlight ms-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <strong> NOS SERVICES</strong></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item mb-3" href="#">Prestation Informatique</a></li>
-                                    <li><a class="dropdown-item mb-3" href="#">Réseaux Informatiques & Télécoms</a></li>
-                                    <li><a class="dropdown-item mb-3" href="#">Vente de Matériel Informatique</a></li>
-                                    <li><a class="dropdown-item mb-3 " href="#">Sécurité Informatique</a></li>
-                                    <li><a class="dropdown-item " href="#">Impression</a></li>
-                                </ul>
-                        </li>
-                        <li class= "nav-item">
-                            <a class="nav-link nav-highlight ms-2 " href="#"><strong>CONTACT</strong></a>
-                        </li>
-                        <li class= "nav-item">
-                            <a class="nav-link nav-highlight ms-2" href="#"><strong>A PROPOS</strong></a>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-            
-        </div>
-    </div>
-{% endblock%}
 
 
     
@@ -85,7 +40,7 @@ Accueil
     <div class="row g-4">
 
       <div class="col-md-4">
-        <a href="#" class="service-card" style="background-image: url('./static/images');">
+        <a href="{{ url_for('service') }}#prestation" class="service-card" style="background-image: url('./static/images');">
           <div class="overlay">
             <h5>Prestation informatique</h5>
           </div>
@@ -93,7 +48,7 @@ Accueil
       </div>
 
       <div class="col-md-4">
-        <a href="#" class="service-card" style="background-image: url('./static/images');">
+        <a href="{{ url_for('service') }}#reseaux" class="service-card" style="background-image: url('./static/images');">
           <div class="overlay">
             <h5>Reseau informatique & Telecom</h5>
           </div>
@@ -101,7 +56,7 @@ Accueil
       </div>
 
       <div class="col-md-4">
-        <a href="#" class="service-card" style="background-image: url('./static/images/placement.jpg');">
+        <a href="{{ url_for('vente') }}" class="service-card" style="background-image: url('./static/images/placement.jpg');">
           <div class="overlay">
             <h5>Vente de materiel informatique</h5>
           </div>
@@ -110,7 +65,7 @@ Accueil
 
 
       <div class="col-md-4">
-        <a href="#" class="service-card" style="background-image: url('./static/images/placement.jpg');">
+        <a href="{{ url_for('service') }}#securite" class="service-card" style="background-image: url('./static/images/placement.jpg');">
           <div class="overlay">
             <h5>Securite informatique</h5>
           </div>
@@ -118,7 +73,7 @@ Accueil
       </div>
 
       <div class="col-md-4">
-        <a href="#" class="service-card" style="background-image: url('./static/images/placement.jpg');">
+        <a href="{{ url_for('service') }}#maintenance" class="service-card" style="background-image: url('./static/images/placement.jpg');">
           <div class="overlay">
             <h5>Maintenance Informatique</h5>
           </div>
@@ -143,88 +98,3 @@ Accueil
     
 {% endblock %}
 
-
-
-
-
-
-{% block footer %}
-<div class="container-lg  test">
-    <div class="  col-12 text-center py-3 ">
-
-        <div class="row">
-            <div class="col-lg-4 ">
-               <h3 class="h3-footer"> Digiterra</h3>
-               <p>
-                Secteur 46, karpala.
-                <br>
-                Ouagadougou, kadiogo, Burkina faso.
-                <br>
-               </p>
-              
-                        <a href="tel:+22665816790" class="btn btn-info "> 65-81-67-90</a>
-                        <br >
-                <div class ="mt-5">
-                        <a href="https://www.facebook.com/share/1Vhws6MobJ/?mibextid=wwXIfr" class="btn btn-primary btn-social mx-3">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-
-                        <a href="https://wa.me/1234567890" class="btn btn-success bordure btn-social mx-2">
-                        <i class="fab fa-whatsapp"></i>
-                        </a>
-                </div>
-
-
-            </div>
-
-            <div class="col-lg-4 ">
-                <nav class="" style="width: 250px;">
-                    <ul class="nav flex-column">
-                        <li class="nav-item text-uppercase fw-bold text-black-50 mt-3 border-bottom pb-2">NOTRE ENTREPRISE</li>
-                        <li class="nav-item"><a class="nav-link" href="#">NOS RACINES</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">L'ÉQUIPE</a></li>
-
-                        <li class="nav-item text-uppercase fw-bold text-black-50 mt-3 border-bottom pb-2">NOS SERVICES</li>
-                        <li class="nav-item"><a class="nav-link " href="#">Prestation Informatique</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Réseaux Informatiques & Télécoms</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Vente de Matériel Informatique</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sécurité Informatique</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-lg-4">
-                <form class="p-4 rounded  text-white" style="max-width: 500px; margin: auto;">
-                    <div class="mb-3">
-                        <label for="nom" class="form-label">Nom</label>
-                        <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="courriel" class="form-label">Courriel</label>
-                        <input type="email" class="form-control" id="courriel" placeholder="exemple@domaine.com">
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Votre message..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                </form>
-
-
-            </div>
-
-        </div>
-        <div>
-            <P> Numero IFU:00236711k, Numero RCCM: BF OUA 012024 M 16279 </P>
-            <a href="tel:+22665816790">65 81 67 90</a>
-            <a href="mailto:Digiterra@bfgmail.com">Digiterra@bfgmail.com</a>
-             <p>&copy; 2025 DIGITERRA - Tous droits réservés   - conception DIGITERRA</p>
-        </div>
-    </div>
-</div>
-
-{% endblock %}
-</body>
-</html>
