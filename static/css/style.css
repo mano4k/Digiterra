@@ -646,15 +646,17 @@ background-image: url('../images/back2\ \(2\).jpg');
   gap: 30px;
   max-width: 800px;
   margin: 0 auto;
+  
 }
 
 .securite-section .pyramid-level {
   display: flex;
   align-items: center;
-  gap: 20px;
+  column-gap: 0;
+  gap: 0;
   background-color: rgba(0, 179, 107, 0.1);
   border-left: 4px solid #00b36b;
-  padding: 20px;
+  padding-left: 0;
   border-radius: 10px;
   transition: background-color 0.4s ease, transform 0.3s ease;
 }
@@ -667,6 +669,8 @@ background-image: url('../images/back2\ \(2\).jpg');
 .securite-section .icon {
   background-color: #00b36b;
   color: #001a10;
+  margin-right: 15px;
+  margin-left: 100px;
   border-radius: 50%;
   padding: 15px;
   font-size: 1.5rem;
@@ -683,7 +687,7 @@ background-image: url('../images/back2\ \(2\).jpg');
 
 .securite-section h5 {
   color: #e0f2e9;
-  margin: 0 0 5px 0;
+  margin: 0 0 0 0;
   font-size: 1.3rem;
 }
 
